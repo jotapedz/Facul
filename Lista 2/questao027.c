@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main() {
+    int num, maior, menor, produto;
+    printf("Digite um numero inteiro: ");
+    scanf("%d", &num);
+    maior = num;
+    menor = num;
+    while (num >= 0 || num % 2 != 0) {
+        if (num > maior) {
+            maior = num;
+        }
+        if (num < menor) {
+            menor = num;
+        }
+        printf("Digite outro numero inteiro: ");
+        scanf("%d", &num);
+    }
+    produto = maior * menor;
+    printf("O produto do maior pelo menor numero apresentado eh: %d\n", produto);
+    return 0;
+}
