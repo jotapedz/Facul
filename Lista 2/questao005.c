@@ -7,6 +7,7 @@ int main() {
         if (n == 0) {
             break;
         }
+        //lembrar do que aconteceu
         if (primeiro) {
             maior = n;
             menor = n;
